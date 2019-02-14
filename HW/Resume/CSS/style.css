@@ -1,24 +1,24 @@
 body{
   background-color: pink;
-font-family:arial,san-serif;
-color:red;
+font-family:Merriweather,sans-serif;
+color:red
 }
 
 a {color:black;
-text-decoration:none;}
+  text-decoration: none;
+}
 
 a:hover{
-  background-color:LightSkyBlue;
+  background-color: LightSkyBlue
 }
-<address{
+
+address{
 }
 
 img{
-  
+
 }
-
-
-#Academic{
+#Academics{
   color: MediumPurple
 }
 
