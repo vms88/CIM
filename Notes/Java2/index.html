@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Honey Sugar Lipscrub</title>
+    <style>
+    li{
+      width: 1000px;
+      height: 100px;
+      background-color:LightYellow;
+      font-family:"Monospace","Courier New";
+      text-align:center;
+      align:center;
+    }
+
+    body{
+      font-family:"Monospace","Courier New";
+    }
+    h1{
+      text-align:center;
+    }
+
+    h2{
+      text-align:center;
+    }
+
+    h3{
+      text-align:center;
+    }
+
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Homeade Honey Sugar Lipscrub</h1>
+    <h2 id="click1">DIY Details</h2>
+    <h3 id="click2">Hide Details</h3>
+    <p id="hideInfo"class="info" >Here's a fun, easy way to make a lip scrub using household products! A customizeable DIY project that is useful in every day life! Cater the recipe and steps to best fit your interests. Go ahead and add any essential oils to add to the benefits of this natural lip scrub.</p>
+
+    <h2 id="mouseOverOut">Save money and have fun creating many different variations of this versatile recipe</h2>
+
+    <h1 id= toggle> DIY Instructions<h1>
+      <p id="toggleInfo" class="info">Materials:Honey & Sugar, container for your very own lipscrub (Add any other oils as desired to enhance scrub)</p>
+
+      <ul>
+        <ul type = "square">
+        <li id="info1">Pour 1 teaspoon of honey</li>
+        <li id="info2">Pour 2 teaspoons of sugar, preferrably brown sugar</li>
+        <li id="info3">Mix together and repeat ratio until satisfied with amount</li>
+        <li id="info4">Place into personalized container</li>
+        <li id="info5">Clean off any excess and make sure it fits nicely in container</li>
+        <li id="info6">Enjoy!!</li>
+      </ul>
+
+<div id="replaceText">Click on each step for pictures!</div>
+    <!--Step 1: Add jquery-->
+    <!--Relative Link jquery-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!--Absolute Link jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      //All jquery code goes below
+
+      //$("#hideInfo").hide();//Hides id hideInfo
+      //$("#toggleInfo").hide();
+      $(".info").hide();
+      $("body").css("background-color","pink")
+
+      $("#click1").click(function(){
+        $("#hideInfo").show();
+      });//end of click1
+
+      $("#click2").click(function(){
+        $("#hideInfo").hide();
+      });
+
+      $("#mouseOverOut").mouseenter(function(){
+        $("#mouseOverOut").css("color", "pink");
+          $("#mouseOverOut").css("background-color", "LightYellow");
+      });
+
+      $("#mouseOverOut").mouseleave(function(){
+        $("#mouseOverOut").css("color", "black");
+        $("#mouseOverOut").css("background-color","")
+      });
+
+
+
+      $("#toggle").click(function(){
+        $("#toggleInfo").toggle(1000);
+      });
+
+      $("#info1").click(function(){
+        $("#replaceText").html("<img src='images/IMG_6385.jpeg'Width='400'>");
+      });
+
+
+      $("#info2").click(function(){
+        $("#replaceText").html("<img src='images/IMG_6386.jpeg'Width='400'>");
+      });
+
+      $("#info3").click(function(){
+        $("#replaceText").html("<img src='images/IMG_6387.jpeg'Width='400'>");
+      });
+
+      $("#info4").click(function(){
+        $("#replaceText").html("<img src='images/IMG_6389.jpeg'Width='400'>");
+      });
+
+        $("#info5").click(function(){
+          $("#replaceText").html("<img src='images/IMG_6390.jpeg'Width='400'>");
+      });
+
+      $("#info6").click(function(){
+        $("#replaceText").html("");
+      });
+
+
+
+      //End of jquery code
+    });
+
+  </script>
+
+
+  </body>
+</html>
