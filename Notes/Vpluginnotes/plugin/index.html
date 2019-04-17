@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vacations!</title>
+    <style >
+      .char1{
+        color:LightSkyBlue;
+        font-style: "Monospace", "Courier New";
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <h1 id="title">My Vacations</h1>
+    <h1 id="words">Here's a look at my vacations!</h1>
+    <p id="sentence">I am<br> broken<br></p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lettering.js"></script>
+  <script type="text/javascript">
+    $("document").ready(function(){
+      //jquery code goes in here
+      $("#title").lettering();
+      $("#words").lettering("words");
+      $("#sentence").lettering("lines");
+    });
+  </script>
+  </body>
+</html>

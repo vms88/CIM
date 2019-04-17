@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vacations!</title>
+    <link rel="stylesheet" href="css/basic-quickflips.css">
+    <link rel="stylesheet" href="css/hover-quickflips.css">
+
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+    <script type="text/javascript" src="javascript/jquery.quickflip.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.quickflip.source.js"></script>
+  </head>
+  <header>
+    Vacation Gallery
+  </header>
+  <body>
+    <div class="quickflip-wrapper">
+    <div>Mexico</div>
+    <div>Back panel content here</div>
+</div>
+$(function() {
+    $('.quickflip-wrapper').quickFlip();
+});
+<div class="quickflip-wrapper">
+    <div>
+    <a href="#" class="quickFlipCta">Click to flip front panel</a>
+    </div>
+    <div>
+    <a href="#" class="quickFlipCta">Click to flip back panel</a>
+    </div>
+$('.quickflip-wrapper').quickFlipper();
+$('.quickflip-wrapper').hover( function(ev) {
+    $(ev.target).quickFlipper();
+});
+
+  </body>
+</html>
